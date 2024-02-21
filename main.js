@@ -1,6 +1,10 @@
 $(document).ready(function() {
+  $('form').hide();
+  $('ul').css('border-top-right-radius', '50px');
+  $('ul').css('border-top-left-radius', '50px');
   $('#slide').click(function(){
     $('form').slideToggle();
+    $('ul').css('border-radius', '0px');
   })
 
 $('form').on('submit', function(e) {
